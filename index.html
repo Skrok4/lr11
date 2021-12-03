@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="img/icons.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.1/chart.min.js"></script>
+	<title>Lab 11</title>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="module-border-wrap">
+        <div class="module">
+    <div class="cards">
+        <div id="words">Lets translate words, press arrow</div>
+    </div>
+
+    <div class="menu"> 
+         <div class="counter"> <span id="counter">0</span>/10</div>
+         <div class="next" id="btnNext"><img src="img/arrow.png" alt="arrow"> </div> 
+         <button class="check" id = "btnCheck"><img src="img/check.png" alt="check"> </button>
+    </div>
+
+    <input class="field" value="" placeholder="Введіть переклад слова"></input>
+
+    <div class="statistics">
+        Статистика
+        <div class="bar">
+        <div class="correctCounter"> <img src="img/correct.png" alt="correct"> Вірно<br/><span id="correct">0</span></div>
+        <div class="wrongCounter"><img src="img/wrong.png" id="uncor" alt="wrong"> Невірно<br/><span id="wrong">0</span></div>
+    </div>
+    </div>
+    
+    <div class="popup-fade">
+        <div class="popup">
+            <canvas id="answers" width="600" height="400"></canvas>
+            <span class="result"></span>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
